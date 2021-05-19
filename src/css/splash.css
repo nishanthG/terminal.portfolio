@@ -1,0 +1,62 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 10vh;
+  justify-content:flex-start;
+  align-items: center;
+  background-color: black;
+}
+
+.cd {
+  font-family: Rockwell;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #95EB28;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.container {
+  height: 90vh;
+  /* background-image: url("../assets/matrix-bg.svg"); */
+  background-color: #000000;
+  /* background-size; */
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.terminal {
+  grid-area: terminal;
+  background-image: url("../assets/terminal-new.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 3/12;
+  grid-row: 3/10;
+}
+
+.terminal-text {
+  grid-column: 3/12;
+  grid-row: 5/10;
+  width: 628px;
+  height: 40vh;
+  margin-top: 100px;
+  margin-left: 15px;
+  color: antiquewhite;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .terminal-text {
+    grid-column: 3/12;
+    grid-row: 5/10;
+    height: 40.3%;
+    color: antiquewhite;
+    width: auto;
+    margin: 40px 0;
+    font-size: 10px;
+  }
+}
