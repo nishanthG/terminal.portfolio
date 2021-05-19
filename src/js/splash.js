@@ -22,5 +22,5 @@ var warning = {
 
 export function type() {
   typeWriter(terminal_text, document.querySelector(".terminal-text p"), 50);
-  // setTimeout(warning.enable, 5000);
+  setTimeout(warning.enable, 5000);
 }
