@@ -11,7 +11,8 @@ componentDidMount(){
       <div className="splash-page">
         <section className="nav-bar">
           <div className="cd">
-            <p className='text'>root@kali:~/home</p>
+            <p className='text'>root@kali: ~/home</p>
+            <p className="cursor">|</p>
           </div>
         </section>
         <div className="container">
