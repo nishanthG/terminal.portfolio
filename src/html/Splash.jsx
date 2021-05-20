@@ -25,8 +25,6 @@ class Splash extends React.Component {
               <img src={warning} alt="warning" className="alert" />
             </div>
             <div className="info">
-              <p className="text">connecting into IPv4 Address: 192.168.67.246 <br/>
-              subnet mask: 255.255.255.0</p>
             </div>
           </section>
         </div>

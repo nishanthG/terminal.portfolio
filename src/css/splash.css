@@ -1,7 +1,12 @@
+.splash-page {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   height: 10vh;
   justify-content: space-around;
   align-items: flex-start;
@@ -35,7 +40,7 @@
   height: 90vh;
   background-image: url("../assets/matrix-bg.svg");
   background-color: #000000;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
@@ -78,11 +83,18 @@
     color: #95eb28;
     font-size: 8px;
   }
+
+  .info .text-initiate, .info .text-ipv4 {
+    font-size: 11px;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  .cd, .info .text {
+  .cd {
     font-size: 11px;
+  }
+  .info .text-initiate, .info .text-ipv4 {
+    font-size: 8px;
   }
 
   .terminal-text {
@@ -109,16 +121,23 @@
 
 .info {
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-around;
+  align-content:center;
+  flex-direction: column;
   position: fixed;
-  bottom: 10%;
+  bottom: 5%;
+  background-color: black;
+  color: #95eb28;
 }
 
-.info .text{
+.info .text-initiate, .info .text-ipv4 {
+  align-self:center;
   color: #95eb28;
+  /* padding: 10px 0; */
   font-family: Rockwell;
   text-align: left;
+  line-height: 150%;
   width: 70%;
 }
 
