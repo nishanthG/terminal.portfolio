@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/splash.css";
-import { type } from "../js/splash.js";
+import { run } from "../js/gsap.js";
 import warning from "../assets/warning.svg";
 
 class Splash extends React.Component {
   componentDidMount() {
-    type();
+    run();
   }
   render() {
     return (
@@ -19,12 +19,32 @@ class Splash extends React.Component {
         <div className="container">
           <section className="terminal">
             <div className="terminal-text">
-              <p></p>
+              <span className="one-line">
+                <p className="txt-1 root">kali@linux:~/Desktop/hack/$</p>
+                <p className="txt-2"></p>
+              </span>
+              <span className="one-line">
+                <p className="txt-3 root"></p>
+                <p className="txt-4"></p>
+              </span>
+              <span className="one-line">
+                <p className="txt-5 root"></p>
+                <p className="txt-6"></p>
+              </span>
+              <span className="one-line">
+                <p className="txt-7 msg"></p>
+              </span>
+              <span className="one-line">
+                <p className="txt-8 root"></p>
+                <p className="txt-9"></p>
+              </span>
+              <span className="one-line">
+                <p className="txt-10 root"></p>
+                <p className="txt-11"></p>
+              </span>
             </div>
             <div className="warning">
               <img src={warning} alt="warning" className="alert" />
-            </div>
-            <div className="info">
             </div>
           </section>
         </div>
